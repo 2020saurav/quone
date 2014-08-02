@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Quone</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_quotes">Quotes</string>
+    <string name="title_activity_location">Location</string>
+    <string name="title_activity_news">News</string>
+    <string name="title_activity_chat">Chat</string>
+    <string name="friendsgeolocation">Point on Maps with Thumbnail of friends DP</string>
+    <string name="title_activity_science">Science</string>
+    <string name="title_activity_tech">Technology</string>
+    <string name="title_activity_entertainment">Entertainment</string>
+    <string name="title_activity_world">World News</string>
+
+</resources>

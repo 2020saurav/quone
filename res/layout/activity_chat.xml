@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  
+    tools:context=".ChatActivity" >
+
+    <!-- Give a "clear" button in 'Settings' option to clear local db
+    Central db structure:
+    id (timestamp) | time | person | content | seen by Saurav (bool) | seen by Rach (bool) | seen by fkjb (bool)
+    query will be sorted by timestamp. send json of time|person|content based on seen or not.
+    push by get request http://saurav.bl.ee/chatpush.php?user="Saurav"&chat="blah blah"; Do something for json charachters that can mess up java code.
+     -->
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="4dp"
+        android:inputType="text"
+        android:layout_toLeftOf="@+id/button1"
+        
+        android:layout_marginTop="4dp"
+        
+        
+        android:ems="10" >
+
+       
+
+    </EditText>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editText1"
+        android:layout_alignBottom="@+id/editText1"
+        android:layout_alignParentRight="true"
+        android:text="Post" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="179dp"
+        android:text="Sorry, this feature is not available for you right now." />
+
+</RelativeLayout>
